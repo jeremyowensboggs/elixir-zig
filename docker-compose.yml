@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  elixir-linux:
+    build: .
+    volumes:
+      - ./src:/app
