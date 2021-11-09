@@ -1,12 +1,12 @@
 # Elixir Zig Example for macos/linux in Docker
-This example is started in an attempt to get [zigler](https://github.com/ityonemo/zigler) working for macos, by 
-starting a base, minimalist zig nif example.
+This example is started in an attempt to get [zigler](https://github.com/ityonemo/zigler) working for macos.  This project provides
+a minimalist zig nif example, and a minimalist c nif example.
 
-This repo demonstrates a working zig NIF.  Currently, the nif only works on Linux.  This project
+This repo is supposed to demonstrate a working zig NIF.  Currently, the nif only works on Linux.  This project
 demonstrates that by using a Docker container.  When run through the docker container, the nifs load
 and work, but when they are run in **macos**, they do not.
 
-The expectation is that this project is on a macos, with Docker, elixir and zig already installed.
+To use this project as intended, you need to be on macos, with Docker, elixir and zig already installed.
 
 ## The nifs
 There are 2 nifs in this example project. A nif written in C I used to help make sure I understood how a nif should work,
