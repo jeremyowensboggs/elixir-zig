@@ -98,10 +98,10 @@ export fn nif_init() *const e.ErlNifEntry {
 ///////////////////////////////////////////////////////////////////////////////
 // NIF LOADING Boilerplate
 
-pub export fn blank_load(_: env, _: [*c]?*c_void, _: term) c_int {
+pub export fn blank_load(_: env, _: [*c]?*anyopaque, _: term) c_int {
     return 0;
 }
 
-pub export fn blank_upgrade(_: env, _: [*c]?*c_void, _: [*c]?*c_void, _: term) c_int {
+pub export fn blank_upgrade(_: env, _: [*c]?*anyopaque, _: [*c]?*anyopaque, _: term) c_int {
     return 0;
 }

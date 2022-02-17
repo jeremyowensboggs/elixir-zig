@@ -7,6 +7,8 @@ RUN apt-get update && \
 RUN curl -o zig-linux-x86_64-0.8.1.tar.xz https://ziglang.org/download/0.8.1/zig-linux-x86_64-0.8.1.tar.xz && \
   tar -xvf zig-linux-x86_64-0.8.1.tar.xz
 
+RUN curl -o zig-linux-x86_64-0.9.1-dev.tar.xz https://ziglang.org/download/0.9.1/zig-linux-x86_64-0.9.1.tar.xz && \
+  tar -xvf zig-linux-x86_64-0.9.1-dev.tar.xz
 
 ENV APP_HOME /app
 RUN mkdir $APP_HOME
